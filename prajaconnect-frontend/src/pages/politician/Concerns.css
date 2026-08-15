@@ -1,0 +1,33 @@
+.concerns-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.concern-card {
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.concern-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); border-color: rgba(30,64,175,0.08); }
+
+.concerns .btn-sm {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.concerns .empty {
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+/* improve IssueConversation spacing inside concern cards */
+.issue-conversation__header { gap: 0.75rem; }
+.issue-conversation__status { font-size: 0.8rem; font-weight: 800; }
+.issue-conversation__description { margin-top: 0.6rem; color: var(--text-muted); }

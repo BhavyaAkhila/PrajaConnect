@@ -1,0 +1,42 @@
+.moderation-queue .empty-state {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.moderation-queue .empty-icon {
+  font-size: 2.5rem;
+  color: var(--success);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.moderation-queue .empty-state p {
+  color: var(--text-muted);
+}
+
+.moderation-queue .queue-list {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.moderation-queue .queue-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.moderation-queue .page h1 {
+  color: var(--text);
+}
+
+.moderation-queue .page-desc {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}

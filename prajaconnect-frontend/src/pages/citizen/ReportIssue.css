@@ -1,0 +1,77 @@
+.report-issue .form-card {
+  max-width: 560px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+}
+
+.report-issue label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.report-issue input,
+.report-issue select,
+.report-issue textarea {
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.report-issue textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.report-issue input:focus,
+.report-issue select:focus,
+.report-issue textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.report-issue .form-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+}
+
+.report-issue .field-error {
+  display: block;
+  margin-top: 0.45rem;
+  color: var(--danger);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.report-issue .form-success {
+  background: linear-gradient(90deg, rgba(5,150,105,0.06), rgba(240,249,245,0.02));
+  border: 1px solid var(--success-soft);
+  color: var(--success);
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.report-issue .form-error {
+  background: var(--danger-soft);
+  border: 1px solid rgba(220, 38, 38, 0.12);
+  color: var(--danger);
+  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}

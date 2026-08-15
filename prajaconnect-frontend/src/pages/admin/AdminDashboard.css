@@ -1,0 +1,42 @@
+.admin-dashboard .page-desc {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.admin-dashboard .dashboard-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-dashboard .card {
+  background: linear-gradient(180deg, var(--surface), #fbfdff);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  box-shadow: var(--shadow);
+}
+
+.admin-dashboard .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); border-color: rgba(30,64,175,0.08); }
+
+.admin-dashboard .card-icon { font-size: 1.1rem; display: inline-block; padding: 0.45rem 0.6rem; border-radius: 8px; background: rgba(30,64,175,0.06); color: var(--primary); margin-bottom: 0.5rem; }
+
+.admin-dashboard .card h3 { font-size: 1.05rem; margin-bottom: 0.25rem; color: var(--text); }
+
+.admin-dashboard .card p { color: var(--text-muted); font-size: 0.92rem; margin: 0; }
+
+.admin-dashboard .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
+
+.admin-dashboard .stat-card { background: linear-gradient(180deg, var(--surface), #ffffff); border: 1px solid var(--card-border); border-radius: 12px; padding: 1.25rem; text-align: center; box-shadow: var(--shadow); }
+
+.admin-dashboard .stat-card:hover { border-color: rgba(30,64,175,0.08); box-shadow: var(--shadow-md); }
+
+.admin-dashboard .stat-value { display: block; font-size: 1.6rem; font-weight: 800; color: var(--primary); }
+
+.admin-dashboard .stat-label { font-size: 0.9rem; color: var(--text-muted); margin-top: 0.25rem; font-weight: 700; }
+
+.admin-dashboard .page h1 { color: var(--text); }

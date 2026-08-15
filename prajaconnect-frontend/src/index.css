@@ -1,0 +1,153 @@
+:root {
+ /* Civic-tech palette (Inter font used globally) */
+ /* Primary (Deep / Royal Blue) */
+ --primary: #1E40AF; /* Royal Indigo-Blue */
+ --primary-600: #153E8A;
+ --secondary: #06B6A4; /* Vibrant Teal */
+ --accent: #F59E0B; /* Warm Orange / Golden */
+ --accent-700: #D97706;
+ --bg: #F5F9FF; /* very light blue/gray */
+ --bg-soft: #F8FBFF;
+ --surface: #FFFFFF;
+ --card-border: rgba(15,23,42,0.06);
+ --border: rgba(15,23,42,0.06);
+ --border-light: rgba(15,23,42,0.03);
+ --text: #071233; /* dark navy/charcoal */
+ --text-muted: #475569;
+ --success: #059669;
+ --warning: var(--accent);
+ --danger: #DC2626;
+ --radius: 12px;
+ --radius-lg: 16px;
+ --shadow: 0 6px 18px rgba(8,27,56,0.06);
+ --shadow-md: 0 10px 30px rgba(8,27,56,0.08);
+ --shadow-lg: 0 18px 60px rgba(8,27,56,0.10);
+ --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+ --font-display: 'Inter', system-ui, sans-serif;
+ /* Legacy variables mapping (so component CSS using old names keep working) */
+ --saffron: var(--accent);
+ --green: var(--secondary);
+ --accent-hover: var(--primary-600);
+ --accent-soft: rgba(30,64,175,0.06);
+ --accent-secondary: var(--accent);
+ --accent-secondary-soft: rgba(245,158,11,0.06);
+ --bg-saffron-soft: rgba(245,158,11,0.04);
+ --bg-green-soft: rgba(6,182,164,0.04);
+ --success-soft: rgba(5,150,105,0.06);
+ --warning-soft: rgba(245,158,11,0.06);
+ --danger-soft: rgba(220,38,38,0.06);
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  font-family: inherit;
+}
+
+/* Global UI refinements */
+button.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+a.nav-link.active, .nav-link.active {
+  outline-offset: 3px;
+}
+
+:focus {
+  outline: 3px solid rgba(19,136,8,0.12);
+  outline-offset: 2px;
+}
+
+.card, .form-card {
+  transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+}
+
+/* Improve contrasts for buttons */
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* Small utility */
+.kicker { color: var(--text-muted); font-size: 0.95rem; }
+
+/* Status badges (reusable) */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.badge--pending { background: rgba(245,158,11,0.08); color: var(--accent-700); border: 1px solid rgba(245,158,11,0.12); }
+.badge--in-progress { background: rgba(6,182,164,0.06); color: var(--secondary); border: 1px solid rgba(6,182,164,0.12); }
+.badge--resolved { background: rgba(16,185,129,0.06); color: var(--success); border: 1px solid rgba(16,185,129,0.12); }
+
+/* Statistic cards common style */
+.stat-card, .dashboard-stat {
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.stat-card:hover, .dashboard-stat:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); border-color: rgba(30,64,175,0.08); }
+
+.stat-value { font-size: 1.6rem; font-weight: 800; color: var(--primary); }
+.stat-label { color: var(--text-muted); font-weight: 600; }
+
+/* Concerns list responsive improvements */
+.concern-card { display: block; }
+@media (min-width: 900px) {
+  .concerns-list { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+}
+

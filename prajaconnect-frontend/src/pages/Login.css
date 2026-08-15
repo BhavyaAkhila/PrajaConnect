@@ -1,0 +1,311 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: linear-gradient(160deg, var(--bg-saffron-soft) 0%, var(--bg-soft) 40%, var(--bg-green-soft) 100%);
+}
+
+.login-flag-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.login-flag-wrap svg {
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.login-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.login-subtitle {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.login-form input,
+.login-form select {
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 1rem;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+/* input with inline toggle button (password) */
+.input-with-toggle {
+  position: relative;
+}
+
+.input-with-toggle .password-toggle {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input-with-toggle .password-toggle:hover {
+  background: var(--accent-soft);
+}
+
+/* simple spinner for buttons */
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.25);
+  border-top-color: #fff;
+  margin-right: 8px;
+  vertical-align: middle;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px; overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; border: 0; padding: 0; margin: -1px;
+}
+
+.role-desc {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+/* ========== Role Slider ========== */
+.role-slider-section {
+  margin: 1.5rem 0;
+}
+
+.role-slider-label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.role-slider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-arrow {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.slider-arrow:hover {
+  background: var(--accent);
+  color: white;
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(19, 136, 8, 0.3);
+}
+
+.slider-track {
+  flex: 1;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(90deg, var(--saffron), var(--green)) border-box;
+  box-shadow: 0 4px 20px rgba(255, 153, 51, 0.1);
+  min-height: 200px;
+}
+
+.slider-track-inner {
+  display: flex;
+  width: 100%;
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slider-slide {
+  width: 100%;
+  min-width: 100%;
+  flex-shrink: 0;
+  padding: 1.5rem;
+}
+
+.slider-slide-inner {
+  text-align: center;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(255, 248, 240, 0.5), rgba(240, 248, 238, 0.3));
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slider-slide-active .slider-slide-inner {
+  box-shadow: 0 0 0 2px var(--accent), var(--shadow-md);
+}
+
+.slider-icon {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.slider-image-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 0.75rem;
+  border: 3px solid var(--accent-soft);
+  background: var(--bg-soft);
+  transition: transform 0.3s ease;
+}
+
+.slider-slide:hover .slider-image-wrap {
+  transform: scale(1.05);
+}
+
+.slider-role-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-slide h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  font-family: var(--font-display);
+}
+
+.slider-slide p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.slider-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: var(--border);
+  padding: 0;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.slider-dots .dot:hover {
+  background: var(--text-muted);
+  transform: scale(1.15);
+}
+
+.slider-dots .dot.active {
+  background: var(--accent);
+  transform: scale(1.35);
+  box-shadow: 0 0 12px rgba(19, 136, 8, 0.6);
+}
+
+/* ========== Form Validation ========== */
+.login-form input.error {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.error-message {
+  display: block;
+  color: #dc3545;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -1,0 +1,105 @@
+.citizen-dashboard .page-desc {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.citizen-dashboard .dashboard-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.citizen-dashboard .card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  box-shadow: var(--shadow);
+}
+
+.citizen-dashboard .card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+  color: inherit;
+  transform: translateY(-2px);
+}
+
+.citizen-dashboard .card-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.citizen-dashboard .card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.citizen-dashboard .card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.citizen-dashboard .updates-feed,
+.citizen-dashboard section {
+  margin-bottom: 2rem;
+}
+
+.citizen-dashboard .updates-feed h2,
+.citizen-dashboard section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-display);
+  color: var(--text);
+}
+
+.citizen-dashboard .feed-list {
+  list-style: none;
+}
+
+.citizen-dashboard .feed-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+.citizen-dashboard .feed-item strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.citizen-dashboard .feed-item .meta {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.citizen-dashboard .feed-item p {
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.citizen-dashboard .empty {
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+.citizen-dashboard .page h1 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}

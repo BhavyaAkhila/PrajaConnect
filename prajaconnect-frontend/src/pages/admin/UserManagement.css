@@ -1,0 +1,62 @@
+.user-management .table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--card-border);
+  background: linear-gradient(180deg, var(--surface), #ffffff);
+}
+
+.user-management .users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+}
+
+.user-management .users-table th,
+.user-management .users-table td {
+  padding: 0.85rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.user-management .users-table th {
+  background: var(--bg-soft);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.user-management .users-table tr:last-child td {
+  border-bottom: none;
+}
+
+.user-management .users-table tr:hover td {
+  background: var(--bg-soft);
+}
+
+.user-management .role-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.user-management .empty {
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+.user-management .page h1 {
+  color: var(--text);
+}
+
+.user-management .page-desc {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
