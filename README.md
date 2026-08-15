@@ -23,6 +23,37 @@ PrajaConnect is a web-based citizen engagement platform that connects citizens w
 - JavaScript (ES6+)
 - HTML5
 - CSS3
+  ## 📸 Screenshots
+
+### 🔐 Login
+
+![Login](screenshots/login.png)
+
+### 🏠 Citizen Dashboard
+
+![Citizen Dashboard](screenshots/citizen%20dashboard.png)
+
+### 📢 Report an Issue
+
+![Report an Issue](screenshots/report%20an%20issue.png)
+
+### 📋 Citizen Concerns
+
+![Citizen Concerns](screenshots/citizen%20concerns.png)
+
+### 🏛️ Politician Dashboard
+
+![Politician Dashboard](screenshots/politician%20dasboard.png)
+
+## 🔮 Future Enhancements
+- 🤖 AI-based complaint classification
+- 📊 Analytics dashboard
+- 🔔 Real-time notifications
+- 📍 Location-based issue mapping
+- 💬 AI chatbot support
+- 😊 Sentiment analysis for citizen feedback
+- 📈 Complaint priority prediction
+
 
 **Backend**
 - Spring Boot
