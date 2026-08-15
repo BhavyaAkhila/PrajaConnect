@@ -64,9 +64,3 @@ PrajaConnect is a web-based citizen engagement platform that connects citizens w
 - 💬 AI chatbot support
 - 😊 Sentiment analysis for citizen feedback
 - 📈 Complaint priority prediction
-
-
-
-
-├── screenshots/              # Application screenshots
-└── README.md
