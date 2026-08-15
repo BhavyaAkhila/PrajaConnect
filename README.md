@@ -24,6 +24,16 @@ PrajaConnect is a web-based citizen engagement platform that connects citizens w
 - HTML5
 - CSS3
   
+  **Backend**
+- Spring Boot
+- Java
+- MySQL
+
+**Tools & Deployment**
+- Git & GitHub
+- Railway
+
+  
  ## 📸 Screenshots
 
 ### 🔐 Login
@@ -56,14 +66,6 @@ PrajaConnect is a web-based citizen engagement platform that connects citizens w
 - 📈 Complaint priority prediction
 
 
-**Backend**
-- Spring Boot
-- Java
-- MySQL
-
-**Tools & Deployment**
-- Git & GitHub
-- Railway
 
 
 ├── screenshots/              # Application screenshots
